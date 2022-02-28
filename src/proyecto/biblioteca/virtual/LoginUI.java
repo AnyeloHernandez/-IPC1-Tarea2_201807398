@@ -47,7 +47,8 @@ public class LoginUI extends javax.swing.JFrame {
             }
         });
 
-        UserField.setToolTipText("Ingrese su usuario");
+        UserField.setText("Ingrese su usuario");
+        UserField.setToolTipText("");
         UserField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 UserFieldActionPerformed(evt);
@@ -134,11 +135,11 @@ public class LoginUI extends javax.swing.JFrame {
                 // Abre la ventana bienvenida
                 ventanabienvenida.setVisible(true);
                 break;
-                }else{
+                }
+            }else{
                     JOptionPane.showMessageDialog(null, "Contraseña incorrecta");
                     break;
                 }
-            }
         }
     }//GEN-LAST:event_BotonIngresarActionPerformed
 
